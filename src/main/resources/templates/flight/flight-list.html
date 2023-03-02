@@ -39,7 +39,7 @@
                     <td th:text="${flight.airportFrom}"></td>
                     <td th:text="${flight.airportTo}"></td>
                     <td th:text="${#temporals.format(flight.dateTimeFrom, 'dd/MM/yy HH:mm')}"></td>
-                    <td th:text="${flight.dateTimeTo(flight.dateTimeTo,, 'dd/MM/yy HH:mm')}"></td>
+                    <td th:text="${#temporals.format(flight.dateTimeTo, 'dd/MM/yy HH:mm')}"></td>
                     <td>
 
                     </td>
