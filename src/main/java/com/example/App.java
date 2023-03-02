@@ -1,7 +1,7 @@
 package com.example;
 
 import com.example.entities.Flight;
-import com.example.repositoires.FlightRepository;
+import com.example.repositories.FlightRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

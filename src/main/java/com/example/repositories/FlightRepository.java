@@ -1,4 +1,4 @@
-package com.example.repositoires;
+package com.example.repositories;
 
 import com.example.entities.Flight;
 import org.springframework.data.jpa.repository.JpaRepository;

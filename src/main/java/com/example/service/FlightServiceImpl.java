@@ -1,7 +1,7 @@
 package com.example.service;
 
 import com.example.entities.Flight;
-import com.example.repositoires.FlightRepository;
+import com.example.repositories.FlightRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
