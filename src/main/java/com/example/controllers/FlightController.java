@@ -6,7 +6,9 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.Optional;
 
@@ -46,5 +48,17 @@ public class FlightController {
 		return "flight/flight-form";
 		
 		
+	}
+	
+	
+	//Guardar formulario para crear/editar un vuelo
+	@PostMapping("flights")
+	public String saveForm(@ModelAttribute Flight flight) {
+		
+		@PostMapping("flights")
+		public String saveForm(@ModelAttribute Flight flight) {
+			flightService.save(flight);
+			return "redirect:/flights";
+		}
 	}
 }
